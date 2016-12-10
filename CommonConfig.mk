@@ -13,7 +13,10 @@
 # limitations under the License.
 
 # Common path
-COMMON_PATH := device/sony/common
+COMMON_PATH := device/sony/common-sodp
+
+# Common vendor
+BOARD_VENDOR := sony
 
 # Do not build proprietary capability
 TARGET_USES_AOSP := true

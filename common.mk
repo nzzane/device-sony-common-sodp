@@ -16,7 +16,7 @@
 TARGET_VENDOR_VERSION := 5
 
 # Common path
-COMMON_PATH := device/sony/common
+COMMON_PATH := device/sony/common-sodp
 
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
