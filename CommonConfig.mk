@@ -18,9 +18,6 @@ COMMON_PATH := device/sony/common-sodp
 # Common vendor
 BOARD_VENDOR := sony
 
-# Do not build proprietary capability
-TARGET_USES_AOSP := true
-
 TARGET_BOARD_AUTO := true
 
 TARGET_NO_RADIOIMAGE := true
@@ -71,6 +68,13 @@ BOARD_QTI_CAMERA_32BIT_ONLY := true
 BOARD_QTI_CAMERA_V2 := true
 DEVICE_SPECIFIC_CAMERA_PATH := hardware/sony/camera
 USE_DEVICE_SPECIFIC_CAMERA := true
+
+# DataServices
+DEVICE_SPECIFIC_DATASERVICES_PATH := vendor/qcom/opensource/dataservices
+USE_DEVICE_SPECIFIC_DATASERVICES := true
+
+# FMRadio
+TARGET_PROVIDES_FMRADIO_JNI := true
 
 # GPS definitions for Qualcomm solution
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
