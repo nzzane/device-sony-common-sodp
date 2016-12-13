@@ -41,6 +41,7 @@ ifeq ($(TARGET_KERNEL_SOURCE),)
 endif
 
 TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist odm
