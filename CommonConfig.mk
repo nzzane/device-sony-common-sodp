@@ -38,8 +38,10 @@ BOARD_KERNEL_CMDLINE += coherent_pool=8M
 BOARD_KERNEL_CMDLINE += sched_enable_power_aware=1 user_debug=31
 
 # Common kernel settings
-TARGET_COMPILE_WITH_MSM_KERNEL := true
-TARGET_KERNEL_SOURCE := kernel/sony/msm
+ifeq ($(TARGET_KERNEL_SOURCE),)
+    TARGET_COMPILE_WITH_MSM_KERNEL := true
+    TARGET_KERNEL_SOURCE := kernel/sony/msm
+endif
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 
