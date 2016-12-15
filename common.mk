@@ -145,7 +145,8 @@ PRODUCT_PACKAGES += \
     libmmjpeg_interface \
     libmmlib2d_interface \
     libmm-qcamera \
-    libqomx_core
+    libqomx_core \
+    Snap
 
 # OSS
 PRODUCT_PACKAGES += \
