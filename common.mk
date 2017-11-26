@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Vendor version
-TARGET_VENDOR_VERSION := 6
+TARGET_VENDOR_VERSION := 5
 
 # Common path
 COMMON_PATH := device/sony/common-sodp
@@ -351,4 +351,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_CUSTOM_IMAGE_MAKEFILES := $(COMMON_PATH)/odm.mk
 
-$(call inherit-product, device/sony/common/treble.mk)
+$(call inherit-product, device/sony/common-sodp/treble.mk)
