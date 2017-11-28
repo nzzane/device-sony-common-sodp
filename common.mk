@@ -256,6 +256,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.add_power_save=1 \
     persist.radio.apm_sim_not_pwdn=1 \
+    persist.vendor.radio.block_allow_data=1 \
     persist.radio.oem_socket=false
 
 # Ringer
@@ -285,7 +286,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicerec=false \
     persist.audio.fluence.speaker=true \
     media.aac_51_output_enabled=true \
-    audio.deep_buffer.media=1
+    audio.deep_buffer.media=true
 
 # Property to enable user to access Google WFD settings.
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -325,7 +326,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.feature.cac=0 \
     persist.camera.ois.disable=0 \
     persist.camera.eis.enable=0 \
-    persist.camera.zsl.mode=1 \
+    persist.camera.zsl.mode=0 \
     persist.camera.exif.rotation=off \
     persist.camera.lib2d.rotation=on
 
