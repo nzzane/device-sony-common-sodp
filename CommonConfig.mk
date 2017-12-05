@@ -68,6 +68,7 @@ BOARD_QTI_CAMERA_32BIT_ONLY := true
 BOARD_QTI_CAMERA_V2 := true
 DEVICE_SPECIFIC_CAMERA_PATH := hardware/sony/camera
 USE_DEVICE_SPECIFIC_CAMERA := true
+CAMERA_DAEMON_NOT_PRESENT := true
 
 # DataServices
 DEVICE_SPECIFIC_DATASERVICES_PATH := vendor/qcom/opensource/dataservices
