@@ -75,8 +75,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_CUSTOM_IMAGE_MAKEFILES := $(COMMON_PATH)/odm.mk
 
-$(call inherit-product, device/sony/common/common-init.mk)
-$(call inherit-product, device/sony/common/common-packages.mk)
-$(call inherit-product, device/sony/common/common-perm.mk)
-$(call inherit-product, device/sony/common/common-prop.mk)
-$(call inherit-product, device/sony/common/common-treble.mk)
+$(call inherit-product, device/sony/common-sodp/common-init.mk)
+$(call inherit-product, device/sony/common-sodp/common-packages.mk)
+$(call inherit-product, device/sony/common-sodp/common-perm.mk)
+$(call inherit-product, device/sony/common-sodp/common-prop.mk)
+$(call inherit-product, device/sony/common-sodp/common-treble.mk)
